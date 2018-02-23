@@ -1,0 +1,6 @@
+Django==2.0.2
+django-environ==0.4.4
+djangorestframework==3.7.7
+gunicorn==19.7.1
+mypy==0.560
+whitenoise==3.3.1

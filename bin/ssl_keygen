@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -eu -o pipefail
+
+openssl genrsa -out config/gunicorn/localhost.key 2048
+openssl req -new -x509 -key config/gunicorn/localhost.key -out config/gunicorn/localhost.crt -days 365 -subj /CN=localhost
